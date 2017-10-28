@@ -1,6 +1,4 @@
-package Principal.beans;
-
-import Principal.Principal;
+package beans;
 
 public class Vehicle
 {
@@ -15,8 +13,8 @@ public class Vehicle
 
     public void initialize( int size, int damage )
     {
-        setSize( size );
-        setDamage( damage );
+        this.size = size;
+        this.damage = damage;
     }
 
     public int getSize()
@@ -24,18 +22,8 @@ public class Vehicle
         return size;
     }
 
-    private void setSize(int size)
-    {
-        this.size = size;
-    }
-
     public int getDamage()
     {
         return damage;
-    }
-
-    private void setDamage(int damage)
-    {
-        this.damage = damage;
     }
 }

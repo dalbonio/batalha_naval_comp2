@@ -1,4 +1,4 @@
-package Principal.beans;
+package beans;
 
 public class JetFighter extends Vehicle
 {

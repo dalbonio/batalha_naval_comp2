@@ -1,5 +1,8 @@
 package services;
 
-public class PlayerService
+import beans.Player;
+
+public interface PlayerService
 {
+    boolean lastShotHit( Player player );
 }
