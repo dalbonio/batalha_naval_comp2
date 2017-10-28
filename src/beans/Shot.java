@@ -55,8 +55,22 @@ public class Shot
     }
 
     @Override
-    public boolean equals(Object obj)
+    public boolean equals( Object obj )
     {
-        return super.equals(obj);
+        if( !( obj instanceof Shot  ) )
+        {
+            return false;
+        }
+
+        Shot shotObject = ( Shot ) obj;
+
+        Position shotObjectPosition = shotObject.getPosition();
+
+        if( shotObjectPosition == null || this.position == null )
+        {
+            return false;
+        }
+
+        return this.position.equals( shotObjectPosition );
     }
 }

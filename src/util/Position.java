@@ -41,11 +41,14 @@ public class Position< X, Y >
     }
 
     @Override
-    public boolean equals(Object o)
+    public boolean equals( Object obj )
     {
-        if ( ! ( o instanceof Position ) ) return false;
+        if ( ! ( obj instanceof Position ) )
+        {
+            return false;
+        }
 
-        Position pairObject = ( Position ) o;
+        Position pairObject = ( Position ) obj;
 
         return this.x.equals( pairObject.getX() ) && this.y.equals( pairObject.getY() );
     }
