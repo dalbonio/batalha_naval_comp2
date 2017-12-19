@@ -41,7 +41,7 @@
           <Color blue="90" green="ee" red="90" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Voc&#xea; Ganhou"/>
+        <Property name="text" type="java.lang.String" value="Voce Ganhou"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
       <Constraints>

@@ -76,7 +76,9 @@ public class MapUtils
         
         boolean isSubmarine = true;
         
-        Pattern pattern = Pattern.compile( Constants.FILE_REGEX );
+        String regex = "[2-4] [A-Ja-j][1-9]";
+        
+        Pattern pattern = Pattern.compile( regex );
         
         Matcher matcher;
         

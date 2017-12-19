@@ -133,14 +133,14 @@ public final class CreateGameFrame extends javax.swing.JFrame {
 
         randomButton.setBackground(new java.awt.Color(153, 255, 153));
         randomButton.setFont(new java.awt.Font("Lucida Sans", 2, 20)); // NOI18N
-        randomButton.setText("Montar Aleatóriamente");
+        randomButton.setText("Montar Aleatoriamente");
         randomButton.setFocusPainted(false);
         tablePanel.add(randomButton);
         randomButton.setBounds(100, 350, 290, 60);
 
         vehicleComboBox.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         vehicleComboBox.setMaximumRowCount(4);
-        vehicleComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Jato", "Submarino", "Navio Escolta", "Porta Avião" }));
+        vehicleComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Jato", "Submarino", "Navio Escolta", "Porta Aviao" }));
         tablePanel.add(vehicleComboBox);
         vehicleComboBox.setBounds(170, 80, 150, 25);
 
@@ -157,7 +157,7 @@ public final class CreateGameFrame extends javax.swing.JFrame {
         startGame.setBounds(100, 760, 290, 60);
 
         fileMessage.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
-        fileMessage.setText("<html><body>Caso alguma posição sobrepor outra, também será inválida</body></html>");
+        fileMessage.setText("<html><body>Caso alguma posicao sobrepor outra, tambem sera invalida</body></html>");
         tablePanel.add(fileMessage);
         fileMessage.setBounds(10, 520, 460, 50);
         fileMessage.getAccessibleContext().setAccessibleName("");
@@ -400,15 +400,15 @@ public final class CreateGameFrame extends javax.swing.JFrame {
         } 
         catch (SizeLimitExceededException ex) 
         {
-            JOptionPane.showMessageDialog(null, "Posicao Invalida, Veículo não cabe");
+            JOptionPane.showMessageDialog(null, "Posicao Invalida, Veiculo nao cabe");
         } 
         catch (InvalidPositionException ex) 
         {
-            JOptionPane.showMessageDialog(null, "Posicao Invalida, já existe um veículo no local.\nClique com o botao direito no veículo caso queira remove-lo");
+            JOptionPane.showMessageDialog(null, "Posicao Invalida, já existe um veículo no local.\nClique com o botao direito no veiculo caso queira remove-lo");
         } 
         catch (VehiclePreviouslySelectedException ex) 
         {
-             JOptionPane.showMessageDialog(null, "Já existe esse veículo no mapa.\nClique com o botao direito no veículo caso queira remove-lo");
+             JOptionPane.showMessageDialog(null, "Ja existe esse veiculo no mapa.\nClique com o botao direito no veiculo caso queira remove-lo");
         }
     }
     
@@ -515,7 +515,7 @@ public final class CreateGameFrame extends javax.swing.JFrame {
                 correctImageIconArray = navio_escolta_images;
                 selectedVehicle = new NavioEscolta();
                 break;
-            case "Porta Avião":
+            case "Porta Aviao":
                 correctImageIconArray = porta_aviao_images;
                 selectedVehicle = new PortaAviao();
                 break;

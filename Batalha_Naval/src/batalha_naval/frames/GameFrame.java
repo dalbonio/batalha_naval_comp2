@@ -57,7 +57,7 @@ public final class GameFrame extends javax.swing.JFrame
         
         addComputerMatrixLabelListener();    
         
-        JOptionPane.showMessageDialog( null, "Selecione o bloco em que deseja atirar e aperte escolha qual tiro usar" );
+        JOptionPane.showMessageDialog( null, "Selecione o bloco em que deseja atirar e escolha qual tiro usar" );
         
         selectLabel( labelMatrixComputer[0][0] );
         updateShootingButtons();
@@ -160,13 +160,13 @@ public final class GameFrame extends javax.swing.JFrame
         acertosLabel1.setForeground(new java.awt.Color(255, 255, 255));
         acertosLabel1.setText("Acertos: ");
         getContentPane().add(acertosLabel1);
-        acertosLabel1.setBounds(1290, 820, 90, 40);
+        acertosLabel1.setBounds(1270, 820, 110, 40);
 
         acertosLabel2.setFont(new java.awt.Font("Verdana", 3, 18)); // NOI18N
         acertosLabel2.setForeground(new java.awt.Color(255, 255, 255));
         acertosLabel2.setText("Acertos: ");
         getContentPane().add(acertosLabel2);
-        acertosLabel2.setBounds(510, 820, 90, 40);
+        acertosLabel2.setBounds(490, 820, 110, 40);
 
         computerHitCounter.setFont(new java.awt.Font("Verdana", 3, 20)); // NOI18N
         computerHitCounter.setForeground(new java.awt.Color(255, 255, 255));
@@ -220,7 +220,6 @@ public final class GameFrame extends javax.swing.JFrame
                 initLabel(labelMatrixComputer[i][j], light_red, black, panelMaquina ); 
                 
                 labelMatrixComputer[i][j].setType( computerMap[i][j] );
-                //labelMatrixComputer[i][j].setText( "V" + computerMap[i][j] );
             }
         }
         
@@ -300,7 +299,7 @@ public final class GameFrame extends javax.swing.JFrame
         
         if( starShot == 0 && cascShot == 0 && cmShot == 0 )
         {
-            JOptionPane.showMessageDialog( null, "Vc não pode atirar\nRenda-se" );
+            JOptionPane.showMessageDialog( null, "Voce nao pode atirar\nDesista." );
         }
     }
     
@@ -314,7 +313,7 @@ public final class GameFrame extends javax.swing.JFrame
         
         if( possibleShots.isEmpty() )
         {
-            JOptionPane.showMessageDialog( null, "O Computador não pode atirar.");
+            JOptionPane.showMessageDialog( null, "O Computador nao pode atirar.");
             return;
         }
         
@@ -333,15 +332,15 @@ public final class GameFrame extends javax.swing.JFrame
         {
             case 1:
                 starShot( computer, new Position( x, y ), labelMatrixPlayer );
-                 JOptionPane.showMessageDialog( null, "Computador Disparou\nTiro estrela na Posição: " + ( (char)(x + 'A') ) + ( y + 1 ) );
+                 JOptionPane.showMessageDialog( null, "Computador Disparou\nTiro estrela em: " + ( (char)(x + 'A') ) + ( y + 1 ) );
                 break;
             case 2:
                 commonShot(computer, new Position( x, y ), labelMatrixPlayer );
-                JOptionPane.showMessageDialog( null, "Computador Disparou\nTiro comum na Posição: " + ( (char)(x + 'A') ) + ( y + 1 ) );
+                JOptionPane.showMessageDialog( null, "Computador Disparou\nTiro comum em: " + ( (char)(x + 'A') ) + ( y + 1 ) );
                 break;
             case 3:
                 cascadeShot(computer, new Position( x, y ), labelMatrixPlayer );
-                JOptionPane.showMessageDialog( null, "Computador Disparou\nTiro cascata na Posição: " + ( (char)(x + 'A') ) + ( y + 1 ) );
+                JOptionPane.showMessageDialog( null, "Computador Disparou\nTiro cascata em: " + ( (char)(x + 'A') ) + ( y + 1 ) );
                 break;
             default:
                 break;
@@ -403,7 +402,7 @@ public final class GameFrame extends javax.swing.JFrame
                        
                        if( !label.isAlive() )
                        {
-                           JOptionPane.showMessageDialog(null, "Bloco Inválido");
+                           JOptionPane.showMessageDialog(null, "Bloco Invalido");
                            return;
                        }
                        
@@ -555,7 +554,7 @@ public final class GameFrame extends javax.swing.JFrame
             @Override
             public void mouseClicked(MouseEvent e)
             {
-                int choice = JOptionPane.showOptionDialog( null, "Você realmente deseja se render?", "Surrender", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null );
+                int choice = JOptionPane.showOptionDialog( null, "Voce realmente deseja desistir?", "Surrender", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null );
                 
                 if( choice == JOptionPane.YES_OPTION )
                 {
@@ -595,7 +594,7 @@ public final class GameFrame extends javax.swing.JFrame
                 
                 if( x < 0 || x > 9  || y < 0 || y > 9 )
                 {
-                    JOptionPane.showMessageDialog(null, "Posição Inválida");
+                    JOptionPane.showMessageDialog(null, "Posicao Invalida");
                     return;
                 }
                 
@@ -611,11 +610,11 @@ public final class GameFrame extends javax.swing.JFrame
                               
                 if( !thereIsVehicle )
                 {
-                    JOptionPane.showMessageDialog(null, "Não há veículo nessa linha ou coluna");                    
+                    JOptionPane.showMessageDialog(null, "Nao tem veiculo nessa linha ou coluna");                    
                 }
                 else
                 {
-                    JOptionPane.showMessageDialog(null, "Há veículo nessa linha ou coluna");   
+                    JOptionPane.showMessageDialog(null, "Tem veiculo nessa linha ou coluna");   
                 }
                 
                 Integer hintInteger = Integer.valueOf( hintCounter.getText() );

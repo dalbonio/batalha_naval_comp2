@@ -117,7 +117,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Lucida Sans" size="20" style="2"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Montar Aleat&#xf3;riamente"/>
+            <Property name="text" type="java.lang.String" value="Montar Aleatoriamente"/>
             <Property name="focusPainted" type="boolean" value="false"/>
           </Properties>
           <Constraints>
@@ -137,7 +137,7 @@
                 <StringItem index="0" value="Jato"/>
                 <StringItem index="1" value="Submarino"/>
                 <StringItem index="2" value="Navio Escolta"/>
-                <StringItem index="3" value="Porta Avi&#xe3;o"/>
+                <StringItem index="3" value="Porta Aviao"/>
               </StringArray>
             </Property>
           </Properties>
@@ -185,7 +185,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Trebuchet MS" size="16" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;body&gt;Caso alguma posi&#xe7;&#xe3;o sobrepor outra, tamb&#xe9;m ser&#xe1; inv&#xe1;lida&lt;/body&gt;&lt;/html&gt;"/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;body&gt;Caso alguma posicao sobrepor outra, tambem sera invalida&lt;/body&gt;&lt;/html&gt;"/>
           </Properties>
           <AccessibilityProperties>
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>

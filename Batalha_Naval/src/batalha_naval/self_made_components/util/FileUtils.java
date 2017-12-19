@@ -19,8 +19,10 @@ public class FileUtils
         List<Integer> invalidPositions = new ArrayList<>();
         
         System.out.println( fileLines );
-        //
-        Pattern pattern = Pattern.compile( Constants.FILE_REGEX );
+        
+        String regex = "[2-4] [A-Ja-j][1-9]";
+        
+        Pattern pattern = Pattern.compile( regex );
         Matcher matcher;      
         
         for(int i = 0; i < fileLines.size(); i++)
@@ -35,7 +37,7 @@ public class FileUtils
 
         if( !invalidPositions.isEmpty() )
         {
-             JOptionPane.showMessageDialog( null, "As seguintes linhas são inválidas: " + invalidPositions );
+             JOptionPane.showMessageDialog( null, "As seguintes linhas são invalidas: " + invalidPositions );
         }       
         
         return true;

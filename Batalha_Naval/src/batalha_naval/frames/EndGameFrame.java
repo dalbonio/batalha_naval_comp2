@@ -30,7 +30,7 @@ public final class EndGameFrame extends javax.swing.JFrame {
         if( !won )
         {
             informationLabel.setForeground( Color.red );
-            informationLabel.setText( "Você Perdeu" );
+            informationLabel.setText( "Voce Perdeu" );
         }                
         
         setListenerOnButtons();
@@ -59,7 +59,7 @@ public final class EndGameFrame extends javax.swing.JFrame {
         informationLabel.setFont(new java.awt.Font("Lucida Sans", 3, 84)); // NOI18N
         informationLabel.setForeground(new java.awt.Color(144, 238, 144));
         informationLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        informationLabel.setText("Você Ganhou");
+        informationLabel.setText("Voce Ganhou");
         informationLabel.setToolTipText("");
         getContentPane().add(informationLabel);
         informationLabel.setBounds(200, 30, 1020, 300);
