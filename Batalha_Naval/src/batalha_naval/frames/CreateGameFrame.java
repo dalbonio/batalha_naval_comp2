@@ -154,7 +154,7 @@ public final class CreateGameFrame extends javax.swing.JFrame {
         startGame.setFont(new java.awt.Font("Lucida Sans", 2, 20)); // NOI18N
         startGame.setText("Iniciar Batalha");
         tablePanel.add(startGame);
-        startGame.setBounds(100, 760, 290, 60);
+        startGame.setBounds(100, 620, 290, 60);
 
         fileMessage.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         fileMessage.setText("<html><body>Caso alguma posicao sobrepor outra, tambem sera invalida</body></html>");
