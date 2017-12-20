@@ -37,7 +37,7 @@ public class FileUtils
 
         if( !invalidPositions.isEmpty() )
         {
-             JOptionPane.showMessageDialog( null, "As seguintes linhas são invalidas: " + invalidPositions );
+             JOptionPane.showMessageDialog( null, "As seguintes linhas sao invalidas: " + invalidPositions );
         }       
         
         return true;
