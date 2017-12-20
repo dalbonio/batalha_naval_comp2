@@ -579,7 +579,12 @@ public final class GameFrame extends javax.swing.JFrame
                     return;
                 }
                 
-                String posicao = JOptionPane.showInputDialog("Digite a Posição", "A1");
+                String posicao = JOptionPane.showInputDialog("Digite a Posicao", "A1");
+
+                if( posicao == null )
+                {
+                    return;
+                }
                 
                 if( posicao.isEmpty() )
                 {
