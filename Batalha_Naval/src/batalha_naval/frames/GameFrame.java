@@ -160,13 +160,13 @@ public final class GameFrame extends javax.swing.JFrame
         acertosLabel1.setForeground(new java.awt.Color(255, 255, 255));
         acertosLabel1.setText("Acertos: ");
         getContentPane().add(acertosLabel1);
-        acertosLabel1.setBounds(1270, 820, 110, 40);
+        acertosLabel1.setBounds(1240, 820, 140, 40);
 
         acertosLabel2.setFont(new java.awt.Font("Verdana", 3, 18)); // NOI18N
         acertosLabel2.setForeground(new java.awt.Color(255, 255, 255));
         acertosLabel2.setText("Acertos: ");
         getContentPane().add(acertosLabel2);
-        acertosLabel2.setBounds(490, 820, 110, 40);
+        acertosLabel2.setBounds(460, 820, 140, 40);
 
         computerHitCounter.setFont(new java.awt.Font("Verdana", 3, 20)); // NOI18N
         computerHitCounter.setForeground(new java.awt.Color(255, 255, 255));
