@@ -19,7 +19,8 @@ public class FileUtils
         List<Integer> invalidPositions = new ArrayList<>();
         
         System.out.println( fileLines );
-        
+
+        //regex para texto do arquivo
         String regex = "[2-4] [A-Ja-j][1-9]";
         
         Pattern pattern = Pattern.compile( regex );

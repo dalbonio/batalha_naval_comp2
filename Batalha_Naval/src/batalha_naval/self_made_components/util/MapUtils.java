@@ -75,14 +75,13 @@ public class MapUtils
         int vehicleType;
         
         boolean isSubmarine = true;
-        
+
+        //regex para texto do arquivo
         String regex = "[2-4] [A-Ja-j][1-9]";
         
         Pattern pattern = Pattern.compile( regex );
         
         Matcher matcher;
-        
-        int counter = 0;
         
         for( int index = 0; index < vehicleArray.length; index++ )
         {           
