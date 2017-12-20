@@ -5,22 +5,12 @@ import java.util.Objects;
 public class Position< X, Y >
 {
 
-    private X x;
-    private Y y;
+    private final X x;
+    private final Y y;
 
     public Position( X x, Y y )
     {
         this.x = x;
-        this.y = y;
-    }
-
-    public void setX( X x )
-    {
-        this.x = x;
-    }
-
-    public void setY( Y y )
-    {
         this.y = y;
     }
 

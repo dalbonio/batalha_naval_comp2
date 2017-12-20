@@ -66,8 +66,6 @@ public class MapUtils
 
     public static int[][] generateMap( String[] vehicleArray )
     {
-        Random random = new Random();
-        
         Set<Integer>typeSet = new HashSet<>();
 
         int[][] map = new int[10][10];
@@ -138,7 +136,6 @@ public class MapUtils
     {
         if( ( y + vehicleSize - 1 ) > map.length - 1 || x > map.length - 1 )
         {
-            //throw new SizeLimitExceededException( "Wrong positioning" );
             return false;
         }
 
