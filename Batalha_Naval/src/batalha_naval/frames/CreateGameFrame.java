@@ -404,7 +404,7 @@ public final class CreateGameFrame extends javax.swing.JFrame {
         } 
         catch (InvalidPositionException ex) 
         {
-            JOptionPane.showMessageDialog(null, "Posicao Invalida, já existe um veículo no local.\nClique com o botao direito no veiculo caso queira remove-lo");
+            JOptionPane.showMessageDialog(null, "Posicao Invalida, ja existe um veiculo no local.\nClique com o botao direito no veiculo caso queira remove-lo");
         } 
         catch (VehiclePreviouslySelectedException ex) 
         {
